@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <meta name="description" content="这是我的个人网站，展示我的作品和经历">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chat.css">
+    <style>
+        /* 添加一些内联样式以确保内容可见 */
+        body { background-color: #f0f0f0; }
+        .test-content { 
+            background-color: #fff; 
+            padding: 20px; 
+            margin: 20px; 
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">测试Logo</div>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#portfolio">作品集</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro-section">
+            <div class="intro-text">
+                <h1>珊珊2002</h1>
+                <p>珊珊2002</p>
+            </div>
+            <div class="intro-image">
+                <img src="imagesimgs/tupian/微信图片_20240918204254.jpg" alt="个人照片">
+            </div>
+        </div>
+
+        <section id="chat">
+            <h2>与我对话</h2>
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages"></div>
+                <div class="chat-input">
+                    <input type="text" id="userInput" placeholder="输入您的问题...">
+                    <button id="sendButton">发送</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>关于我</h2>
+            <p>这里是关于我的介绍...</p>
+        </section>
+
+        <section id="portfolio">
+            <h2>作品集</h2>
+            <div class="portfolio-gallery">
+                <div class="portfolio-item">
+                    <img src="imagesimgs/tupian/微信图片_20240918204254.jpg" alt="作品1">
+                    <p>作品1描述</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="imagesimgs/tupian/微信图片_20240918204306.jpg" alt="作品2">
+                    <p>作品2描述</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="imagesimgs/tupian/微信图片_20240918204309.jpg" alt="作品3">
+                    <p>作品3描述</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>联系方式</h2>
+            <!-- 添加联系表单或联系信息 -->
+            <div class="social-links">
+                <a href="https://b23.tv/ep733316" target="_blank" style="color: #00A1D6;"><i class="fab fa-bilibili"></i><span>哔哩哔哩</span></a>
+                <a href="https://v.douyin.com/ikPEDUWR/" target="_blank" style="color: #000000;"><i class="fab fa-tiktok"></i><span>抖音</span></a>
+                <a href="https://www.xiaohongshu.com/user/profile/5e64dfe5000000000100988f?xhsshare=CopyLink&appuid=63a305f5000000002601042c&apptime=1726700677&share_id=f1ca8338654e4ed788dd874ca2fc3e0e" target="_blank" style="color: #FF2442;"><i class="fas fa-book"></i><span>小红书</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 我的个人网站. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>

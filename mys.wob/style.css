@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 60vh; /* 调整轮播图高度 */
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 改为contain以保持图片比例 */
+    object-position: center;
+}
+
+.swiper-slide p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+}
+
+section {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+/* 新增作品集样式 */
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.portfolio-item {
+    width: calc(33.33% - 20px);
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.portfolio-item p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* 修改介绍部分样式 */
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #fff;
+    margin: 20px;
+    border: 1px solid #ddd;
+}
+
+.intro-text {
+    flex: 2; /* 增加文字部分的比例 */
+}
+
+.intro-image {
+    flex: 1;
+    max-width: 200px; /* 减小最大宽度 */
+    margin-left: 1rem; /* 减小左边距 */
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* 使图片变为圆形 */
+    object-fit: cover;
+    aspect-ratio: 1 / 1; /* 确保图片为正方形 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+    }
+
+    .portfolio-item {
+        width: calc(50% - 20px);
+    }
+
+    .intro-section {
+        flex-direction: column;
+    }
+
+    .intro-image {
+        margin-left: 0;
+        margin-top: 1rem;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-item {
+        width: 100%;
+    }
+}
